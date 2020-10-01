@@ -1,9 +1,8 @@
 ﻿# Abalone-Junior-Project
- 
-![Abalone](https://i.imgur.com/AKIj6js.png)
+ <img src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20WORKING" alt="Project Badge">
 
 An Abalone board game with AI based on mathematical algorithms. 
-
+![Abalone](https://i.imgur.com/AKIj6js.png)
 
 
 ## How to run
