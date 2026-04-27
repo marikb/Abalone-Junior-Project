@@ -4,7 +4,17 @@ A desktop implementation of the strategy board game **Abalone**, built in Java S
 The game ships with a single-player mode against a heuristic AI opponent and a local
 two-player hot-seat mode.
 
-This was developed as a junior-year project (NetBeans Ant project, Java SE).
+Submitted as the final project for the **Software Technician** track at **ORT
+Hermelin College, Netanya** (תשע״ז / 2017). Built in Java with **NetBeans IDE 8.2**.
+Mentors: Michael Chernobalsky and Zehava Yakobson.
+
+> *"I wanted to learn how a computer 'thinks' and to test its skills under
+> non-standard conditions. I liked that Abalone is played on a hexagonal grid that
+> demands a different approach to direction calculations and a slightly inverted
+> logic. Only after working on it did I understand how complex the game really is —
+> and along the way, I learned to apply object-oriented programming principles to
+> reach an efficient and robust product."*
+> — From the original project paper (translated from Hebrew)
 
 ![Abalone](https://i.imgur.com/AKIj6js.png)
 
@@ -19,6 +29,7 @@ This was developed as a junior-year project (NetBeans Ant project, Java SE).
 - [Project structure](#project-structure)
 - [How the AI works](#how-the-ai-works)
 - [Author](#author)
+- [Original project paper](#original-project-paper)
 - [License](#license)
 
 ---
@@ -158,10 +169,20 @@ so the human has a chance to see the board state and the move feels less abrupt.
 
 ## Author
 
-**Mariel Borodkin** — junior-year project.
+**Mariel Borodkin** — final project, Software Technician track,
+ORT Hermelin College, Netanya (2017).
+Mentored by Michael Chernobalsky and Zehava Yakobson.
 
 The "Game creator: Mariel Borodkin" credit is also visible in-game on the
 **Help → About** screen.
+
+## Original project paper
+
+The full project paper (in Hebrew) — covering motivation, design decisions,
+class diagrams, the AI heuristic, and the complete annotated source — is
+included in this repository:
+
+- [docs/abalone-original-paper.pdf](docs/abalone-original-paper.pdf) (78 pages, Hebrew)
 
 ## License
 
