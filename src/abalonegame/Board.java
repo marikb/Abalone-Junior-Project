@@ -67,9 +67,9 @@ public class Board {
     public Board(GameFrame Parent, Point Start, int Num) {
 
         /* Setting the images to to know to each image we relate */
-        RedBallImage = Parent.getToolkit().createImage("Red.png");
-        BlackBallImage = Parent.getToolkit().createImage("Black.png");
-        SelectedBallImage = Parent.getToolkit().createImage("Selected.png");
+        RedBallImage = Parent.getToolkit().createImage("assets/Red.png");
+        BlackBallImage = Parent.getToolkit().createImage("assets/Black.png");
+        SelectedBallImage = Parent.getToolkit().createImage("assets/Selected.png");
 
         m_Human = new HumanPlayer(Parent);
 
@@ -183,8 +183,8 @@ public class Board {
     /* Changing Turn function, also changing who's turn box in GUI */
     public void ChangeTurn() {
         Turn = !Turn;
-        Parent.Turn = Turn ? Parent.getToolkit().createImage("Black.png")
-                : Parent.getToolkit().createImage("Red.png");
+        Parent.Turn = Turn ? Parent.getToolkit().createImage("assets/Black.png")
+                : Parent.getToolkit().createImage("assets/Red.png");
         Parent.repaint();
     }
 

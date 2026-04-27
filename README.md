@@ -77,14 +77,13 @@ The project is a NetBeans Ant project targeting Java SE 1.5+.
 ### Option 1 — Run the prebuilt JAR
 
 ```bash
-cd dist
-java -jar Abalone.jar
+java -jar dist/Abalone.jar
 ```
 
-> The JAR loads its board and marble images from the **working directory**, so make
-> sure you launch it from the project root (or from `dist/` after copying the PNGs in).
-> If the board looks blank, check that `Board.JPG`, `Red.png`, `Black.png`, etc. live
-> next to the JAR.
+> Run this from the **project root**. The game loads its board and marble images
+> from `assets/` relative to the working directory, so the `assets/` folder must
+> sit next to where you launch from. The bundled `dist/lib/swing-layout-1.0.4.jar`
+> is wired in via the JAR's `Class-Path` manifest entry.
 
 ### Option 2 — Open in NetBeans
 
@@ -123,11 +122,15 @@ src/abalonegame/
 ├── HumanPlayer.java      No-op DoStep — the human moves via mouse + buttons
 ├── ComputerPlayer.java   AI player: enumerates moves, grades them, picks the best
 ├── Move.java             A virtual move on a copied board (used for AI lookahead)
-└── AI.java               Thread wrapper so the AI move doesn't block the UI
+├── AI.java               Thread wrapper so the AI move doesn't block the UI
+└── Black.JPG             Menu icon, loaded as a classpath resource
 
+assets/                    Board, marbles, direction-arrow icons (loaded at runtime
+                           via paths relative to the working directory)
 build.xml, nbproject/      NetBeans Ant build files
 dist/Abalone.jar           Pre-built runnable JAR
-*.png, *.JPG               Board, marbles, direction-arrow icons
+dist/lib/                  Third-party deps bundled with the JAR (swing-layout)
+docs/                      Original Hebrew project paper
 ```
 
 The board is stored as an **11×21 byte matrix** (`Board.InitBoard`). The wide column

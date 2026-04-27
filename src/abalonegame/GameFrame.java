@@ -24,18 +24,18 @@ public class GameFrame extends javax.swing.JFrame {
         this.setResizable(false);
         Start = false; // Setting to not started yet.
         
-        /* Images for tools in Project Folder */
-        EmptyBoard = getToolkit().createImage("Board.jpg");
-        BarImage = getToolkit().createImage("Bar.png");
-        Turn = getToolkit().createImage("Red.png");
+        /* Images loaded from the assets/ folder relative to the working dir. */
+        EmptyBoard = getToolkit().createImage("assets/Board.JPG");
+        BarImage = getToolkit().createImage("assets/Bar.png");
+        Turn = getToolkit().createImage("assets/Red.png");
 
-        /* Images for Buttons in Project Folder */
-        UpRightBut.setIcon(new ImageIcon("ru.png"));
-        UpLeftBut.setIcon(new ImageIcon("lu.png"));
-        RightBut.setIcon(new ImageIcon("r.png"));
-        LeftBut.setIcon(new ImageIcon("l.png"));
-        DownRightBut.setIcon(new ImageIcon("rd.png"));
-        DownLeftBut.setIcon(new ImageIcon("ld.png"));
+        /* Direction-button icons */
+        UpRightBut.setIcon(new ImageIcon("assets/ru.png"));
+        UpLeftBut.setIcon(new ImageIcon("assets/lu.png"));
+        RightBut.setIcon(new ImageIcon("assets/r.png"));
+        LeftBut.setIcon(new ImageIcon("assets/l.png"));
+        DownRightBut.setIcon(new ImageIcon("assets/rd.png"));
+        DownLeftBut.setIcon(new ImageIcon("assets/ld.png"));
     }
 
     /* Starting game */
@@ -204,7 +204,7 @@ public class GameFrame extends javax.swing.JFrame {
 
         jMenu1.setText("Game");
 
-        NewMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\borod\\OneDrive\\Documents\\NetBeansProjects\\Abalone\\Selected.JPG")); // NOI18N
+        NewMenu.setIcon(new javax.swing.ImageIcon("assets/Selected.JPG"));
         NewMenu.setText("New");
 
         PlayerMenuItem.setText("vs Player");

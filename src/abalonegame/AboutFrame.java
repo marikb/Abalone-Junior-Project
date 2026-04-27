@@ -11,7 +11,7 @@ public class AboutFrame extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-        ExitButton.setIcon(new ImageIcon("exboard2.png"));
+        ExitButton.setIcon(new ImageIcon("assets/exboard2.png"));
     }
 
     @SuppressWarnings("unchecked")
