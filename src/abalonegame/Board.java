@@ -66,6 +66,8 @@ public class Board {
     /* Creates a new instance of Board */
     public Board(GameFrame Parent, Point Start, int Num) {
 
+        Turn = false;
+
         /* Setting the images to to know to each image we relate */
         RedBallImage = Parent.getToolkit().createImage("assets/Red.png");
         BlackBallImage = Parent.getToolkit().createImage("assets/Black.png");
