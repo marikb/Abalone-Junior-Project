@@ -1,0 +1,19 @@
+# Build output
+build/
+*.class
+
+# NetBeans user-specific
+nbproject/private/
+
+# NetBeans editor lock files
+**/_LCK*.java~
+*.java~
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# IDE / editor
+.idea/
+*.iml
+.vscode/
